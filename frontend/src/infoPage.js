@@ -25,7 +25,6 @@ const InfoPage = () => {
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Password</th>
                         <th>Street Address</th>
                         <th>State</th>
                         <th>Zip Code</th>
@@ -43,17 +42,17 @@ const InfoPage = () => {
                             <td>{user.street_address}</td>
                             <td>{user.state}</td>
                             <td>{user.zip_code}</td>
-                            <td>{user.purpose_usage}</td>
                             <td>{user.area}</td>
                             <td>{user.no_of_floors}</td>
                             <td>{user.year_built}</td>
-                            <td>{user.password}</td>
+                            <td>{user.purpose_usage}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
             <div>
-                <Link to="/login" className='btn btn-default-border w-100 bg-light rounded-0 text-decoration-none'>Return</Link>
+                <Link to="/buildingdetails" className='btn btn-default-border w-100 bg-light rounded-0 text-decoration-none'>Return</Link>
+                <Link to="/utilization" className='btn btn-default-border w-100 bg-light rounded-0 text-decoration-none'>Next</Link>
             </div>
         </div>
     );

@@ -72,7 +72,7 @@ function Login() {
                     </div>
                     <button type="submit" className='btn btn-success w-100 rounded-0'>Login</button>
                     <p>BEAM login page above</p>
-                    <Link to="/signup" className='btn btn-default-border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
+                    <Link to="/buildingdetails" className='btn btn-default-border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
                 </form>
             </div>
         </div>

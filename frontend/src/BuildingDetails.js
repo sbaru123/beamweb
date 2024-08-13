@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Signup.css';
+import './BuildingDetails.css';
 import { Link, Navigate } from 'react-router-dom';
 
-function Signup() {
+function BuildingDetails() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -114,4 +114,4 @@ function Signup() {
     );
 }
 
-export default Signup;
+export default BuildingDetails;
