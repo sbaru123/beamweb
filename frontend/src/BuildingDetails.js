@@ -3,6 +3,8 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './BuildingDetails.css';
 import { Link, Navigate } from 'react-router-dom';
+import logo from './logo.png';
+import Timeline from './Timeline'; // Import the Timeline component
 
 function BuildingDetails() {
     const [formData, setFormData] = useState({
@@ -44,16 +46,18 @@ function BuildingDetails() {
     };
 
     if (redirect) {
-        return <Navigate to="/users" />;
+        return <Navigate to="/utilization" />;
     }
 
     return (
+        <div> 
+             <Timeline currentStep="Building Details" />  
         <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
             <div className="card">
                 <div className="card-header">
-                    <img src="./logo.png" alt="Logo" className="logo mb-2" />
+                    <img src={logo} alt="Logo" className="logo mb-2" /> {/* Updated logo reference */}
                     <h2>Building Energy Analysis & Monitoring</h2>
-                </div>
+                    </div>
                 <div className="card-body">
                     <form onSubmit={handleSubmit}>
                         <div className="row">
@@ -110,6 +114,7 @@ function BuildingDetails() {
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

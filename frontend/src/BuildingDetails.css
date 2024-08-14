@@ -30,3 +30,7 @@ h2 {
 .btn-success:hover {
     background-color: #4cae4c;
 }
+
+.bg-primary {
+    background-color: #7FD18C !important;
+}

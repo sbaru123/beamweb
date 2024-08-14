@@ -18,6 +18,7 @@ const InfoPage = () => {
     }, []);
 
     return (
+
         <div className='container'>
             <h2>User Information</h2>
             <table className="table table-bordered">

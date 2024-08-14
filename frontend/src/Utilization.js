@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Utilization.css';
 import { useNavigate } from 'react-router-dom';
+import Timeline from './Timeline'
 
 const Utilization = () => {
     const [days, setDays] = useState([
@@ -70,6 +71,8 @@ const Utilization = () => {
     };
 
     return (
+        <div>
+             <Timeline currentStep="Utilization" /> 
         <div className="container mt-5">
             <form onSubmit={handleSubmit} className="form-container p-4 border border-dark rounded bg-light">
                 <h2 className="form-title mb-4">Utilization</h2>
@@ -120,6 +123,7 @@ const Utilization = () => {
                 ))}
                 <button type="submit" className="btn btn-primary mt-3 w-100">Submit</button>
             </form>
+        </div>
         </div>
     );
 };

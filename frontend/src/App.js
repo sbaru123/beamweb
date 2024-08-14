@@ -6,6 +6,7 @@ import HomePage from './homePage';
 import InfoPage from './infoPage';
 import Utilization from './Utilization'; // New import
 import Equipment from './Equipment'; // New import
+import AnalysisPage from './AnalysisPage'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/buildingdetails' element={<BuildingDetails />} />
         <Route path='/users' element={<InfoPage />} />
-        <Route path='/utilization' element={<Utilization />} /> {/* New route */}
-        <Route path='/equipment' element={<Equipment />} /> {/* New route */}
+        <Route path='/utilization' element={<Utilization />} />
+        <Route path='/equipment' element={<Equipment />} /> 
+        <Route path='/analysis' element={<AnalysisPage />} /> 
+
       </Routes>
     </BrowserRouter>
   );

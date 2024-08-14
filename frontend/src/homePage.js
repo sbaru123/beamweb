@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './homePage.css'; // Assuming you have a CSS file for additional styling
+import './homePage.css';
 
 import logo from './logo.png'; // Importing the logo image
 
@@ -9,7 +9,7 @@ function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Trigger the fade-in effect when the component mounts
+
         const elements = document.querySelectorAll('.fade-in');
         elements.forEach(el => {
             el.classList.add('visible');
@@ -17,7 +17,7 @@ function HomePage() {
     }, []);
 
     const handleStartClick = () => {
-        navigate('/login'); // Navigate to the login page
+        navigate('/buildingdetails'); // Navigate to the login page
     };
 
     return (
